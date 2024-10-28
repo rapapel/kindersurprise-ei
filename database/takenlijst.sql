@@ -5,7 +5,6 @@ SET time_zone = "+00:00";
 -- Database: `takenlijst`
 --
 
-
 --
 -- Tabel: `taken`
 --
