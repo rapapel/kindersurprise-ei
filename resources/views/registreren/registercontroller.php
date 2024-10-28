@@ -6,14 +6,14 @@ $wachtwoord = $_POST['password'];
 $hash = password_hash($wachtwoord, PASSWORD_DEFAULT);
  
 require_once '../../../config/conn.php';
-$query = "SELECT * FROM gebruikers WHERE username = :username";
+$query = "SELECT * FROM users WHERE username = :username";
 $statement =  $conn->prepare($query);
 $statement->execute([
     ":username"=>$gebruikersnaam
 ]);
 $user = $statement->fetch(PDO::FETCH_ASSOC);
  
-if ($gebruikersnaam == $user['username']){
+if ($gebruikersnaam == $name['username']){
     $msg = "Gebruikersnaam naam niet beschikbaar!";
     header("location: register.php?msg=$msg");
     exit;
@@ -34,7 +34,7 @@ elseif (!preg_match('/[0-9]/', $wachtwoord)){
     exit;
 }
 else{
-    $query = "INSERT INTO gebruikers (name, username, password) VALUES(:name, :username, :password)";
+    $query = "INSERT INTO users (name, username, password) VALUES(:name, :username, :password)";
     $statement = $conn->prepare($query);
     $statement->execute([
         ":name"=>$naam,

@@ -58,7 +58,7 @@ if ($action == 'create')
     //4. Execute
     $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    header("Location: ../../resources/views/taken/index.php?msg=Aangepast!");
+    header("Location: ../../../resources/views/taken/index.php?msg=Aangepast!");
 }
     
 
