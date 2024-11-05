@@ -22,12 +22,12 @@ if (!isset($_SESSION['user_id'])) {
     <div class="container">
         <h1>Takenlijst</h1>
         <div class="a-tags">
-            <a href="create.php">Nieuwe taak &gt;</a>
-            <a href="../taken/index.php">Alle taken &gt;</a>
-            <a href="../components/MadeByMe.php">Gemaakt door mij &gt;</a>
-            <a href="../components/todo.php">TO DO taken &gt;</a>
-            <a href="../components/doing.php">Doing taken &gt;</a>
-            <a href="../components/done.php">Done taken &gt;</a>
+            <a href="create.php">Nieuwe taak</a>
+            <a href="../taken/index.php">Alle taken</a>
+            <a href="../components/MadeByMe.php">Gemaakt door mij</a>
+            <a href="../components/todo.php">TO DO taken</a>
+            <a href="../components/doing.php">Doing taken</a>
+            <a href="../components/done.php">Done taken</a>
         </div>
 
         <?php if (isset($_GET['msg'])) {
