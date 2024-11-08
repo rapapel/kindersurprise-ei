@@ -25,6 +25,6 @@ $_SESSION['user_id'] = $user['id'];
 $_SESSION['user_name'] = $user['username'];
 
 $msg = "Je bent ingelogd!";
-header("Location: $base_url/resources/views/taken/index.php?msg=$msg");
+header("Location: $base_url resources/views/taken/index.php?msg=$msg");
 exit;
 ?>
