@@ -5,7 +5,7 @@
 <head>
     <title>Taken / Takenlijst / Aanpassen</title>
     <?php require_once '../components/head.php'; ?>
-</head>
+</head> 
 
 <body>
     <?php
@@ -20,6 +20,7 @@
 
     <div class="container">
         <h1>Takenlijst aanpassen</h1>
+        test
 
         <?php
         //Haal het id uit de URL:
