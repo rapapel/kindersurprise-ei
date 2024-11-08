@@ -1,5 +1,3 @@
-<?php require_once __DIR__.'/../../../backend/config.php'; ?>
-
 <meta charset="utf-8">
 <meta name="description" content="StoringApp voor technische dienst van DeveloperLand">
 <meta name="viewport" content="width=device-width, initial-scale=1">

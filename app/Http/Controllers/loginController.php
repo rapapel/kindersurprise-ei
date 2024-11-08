@@ -22,7 +22,7 @@ if (!password_verify($password, $user['password'])) {
 }
 
 $_SESSION['user_id'] = $user['id'];
-$_SESSION['user_name'] = $user['username'];
+$_SESSION['username'] = $user['username'];
 
 $msg = "Je bent ingelogd!";
 header("Location: $base_url resources/views/taken/index.php?msg=$msg");

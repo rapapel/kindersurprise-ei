@@ -1,5 +1,3 @@
-<?php require_once __DIR__.'/../../../backend/config.php'; ?>
-
 <header>
     <div class="container">
         <nav>
