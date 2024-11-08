@@ -1,4 +1,4 @@
-<?php require_once __DIR__ .'../../../backend/config.php'; ?>
+<?php require_once __DIR__.'/../../../backend/config.php'; ?>
 
 <meta charset="utf-8">
 <meta name="description" content="StoringApp voor technische dienst van DeveloperLand">
