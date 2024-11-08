@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taken / Takenlijst / Nieuw</title>
-    <?php require_once __DIR__ . '/../components/head.php'; ?>
+    <?php require_once '../components/head.php'; ?>
     <title>Document</title>
 </head>
 

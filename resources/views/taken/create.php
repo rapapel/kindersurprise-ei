@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '/../../../config/config.php';
+require_once '../../../config/conn.php';
 if (!isset($_SESSION['user_id'])) {
     $msg = "Je moet eerst inloggen!";
     header("Location: $base_url/index.php");
@@ -66,8 +66,8 @@ if (!isset($_SESSION['user_id'])) {
                 <input type="date" name="deadline" id="deadline" class="form-input" required>
             </div>
             <div class="form-group">
-                <label for="created_by">Created_by:</label>
-                <input type="text" name="created_by" id="created_by" class="form-input" value="<?php echo ($_SESSION['user_name']) ?>" readonly>
+                <label for="user">Created_by:</label>
+                <input type="text" name="user" id="user" class="form-input" value="<?php echo ($_SESSION['naam']) ?>" readonly>
             </div>
 
             <div class="form-group">

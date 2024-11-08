@@ -43,7 +43,7 @@
         $taak = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
 
-        <form action="../../../app/Http/Controllers/takenController.php" method="POST">
+        <form action="./../../../app/Http/Controllers/takenController.php" method="POST">
             <!-- (voeg hier opdracht 7 toe) -->
             <input type="hidden" name="action" value="update">
             <input type="hidden" name="id" value="<?php echo $id; ?>">

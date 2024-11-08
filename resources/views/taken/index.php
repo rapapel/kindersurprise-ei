@@ -60,7 +60,7 @@ if (!isset($_SESSION['user_id'])) {
                         <td><?php echo  $taak['categorie']; ?></td>
                         <td> <?php require '../components/status.php' ?></td>
                         <td><?php echo  $taak['deadline']; ?></td>
-                        <td><?php echo  $taak['created_by']; ?></td>
+                        <td><?php echo  $taak['user']; ?></td>
                         <td><?php echo  $taak['beschrijving']; ?></td>
                         <td><a href="edit.php?id=<?php echo $taak['id'] ?>" class="a-tag">aanpassen</a></td>
                     </tr>

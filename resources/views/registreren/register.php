@@ -21,7 +21,7 @@ session_start()
                 echo "<div class='msg'>" . $_GET['msg'] . "</div>";
             }
             ?>
-            <form action="registerController.php" method="post">
+            <form action="../../../app/Http/Controllers/registerController.php" method="post">
                 <div class="form-group">    
                     <label for="name">Naam:</label>
                     <input type="text" name="name" id="name" placeholder="naam" required>
