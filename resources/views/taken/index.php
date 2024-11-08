@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../../../backend/config.php';
+require_once '../../../config/conn.php';
 if (!isset($_SESSION['user_id'])) {
     $msg = "Je moet eerst inloggen!";
     header("location: $base_url/resources/views/login/login.php?msg=$msg");
