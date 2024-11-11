@@ -54,7 +54,7 @@ if (!isset($_SESSION['user_id'])) {
                     <th>Aanpassen/Verwijderen</th>
                 </tr>
                 <?php foreach ($taken as $taak) : ?>
-                    <?php if ($taak['user'] == $_SESSION['naam']) : ?>
+                    <?php if ($taak['user'] == $_SESSION['username']) : ?>
                         <tr>
                             <td><?php echo  $taak['titel']; ?></td>
                             <td><?php echo  $taak['afdeling']; ?></td>
