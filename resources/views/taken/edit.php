@@ -44,9 +44,10 @@
         ?>
 
         <form action="./../../../app/Http/Controllers/takenController.php" method="POST">
-            <!-- (voeg hier opdracht 7 toe) -->
             <input type="hidden" name="action" value="update">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <!-- Rest van je form-velden -->
+
             <div class="form-group">
                 <label>Titel:</label>
                 <?php echo $taak['titel']; ?>
